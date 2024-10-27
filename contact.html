@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GOC Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #101010;
+            color: #e0e0e0;
+            background-image: url('background.jpeg'); 
+            background-size: cover;
+            background-position: center; 
+            background-attachment: fixed; 
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .header {
+            font-size: 40px;
+            font-weight: bold;
+            color: #29A8E0;
+            margin-bottom: 20px;
+        }
+
+        .sub-header {
+            font-size: 24px;
+            color: #CCCCCC;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            text-align: left;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .navbar {
+            background-color: #202020;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            color: #29A8E0;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+        }
+
+        form {
+            text-align: left;
+            background-color: #202020;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #303030;
+            color: #e0e0e0;
+        }
+
+        input[type="submit"] {
+            background-color: #29A8E0;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1A7CAB;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            Contact the Operative
+        </div>
+
+        <div class="sub-header">
+            Reach out for Consultation or Collaboration
+        </div>
+
+        <div class="content">
+            <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
